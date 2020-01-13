@@ -5,5 +5,5 @@ export interface Paciente {
     bloodtype?: string,
     height?: string,
     picture?:any,
-    phone?: any
+    phone?: any,
 }

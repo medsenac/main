@@ -40,4 +40,13 @@ public pacienteId: any;
       this.paciente = data;
     })
   }
+
+  abrirDetalhe(paciente){
+
+    this.navCtrl.navigateRoot(['/editsujeito'])
+    
+  }
+  back(){
+    this.navCtrl.navigateBack('/tabs/list-paciente')
+  }
 }

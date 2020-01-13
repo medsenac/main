@@ -8,23 +8,23 @@
 
 <ion-content>
   
-  <ion-card class="cad">
+  <ion-card class="cad" >
     <ion-card-content>
       
       <h1>Editar Sujeito</h1>
       <div class="imgsuj">
-      <img src="assets/img/usuario.svg" alt="sujeito" width="60%">
+      <img [src]="paciente.picture" alt="sujeito" width="60%">
       </div>
 
       <!--formulário para cadastro de cliente-->
-      <div class="form">
-      <ion-input class="dado" placeholder="Nome completo"></ion-input>
-      <ion-input class="dado" placeholder="Idade"></ion-input>
-      <ion-input class="dado" placeholder="Atura"></ion-input>
-      <ion-input class="dado" placeholder="Telefone"></ion-input>
+      <div class="form" >
+      <ion-input class="dado" placeholder="Nome completo" [(ngModel)]="paciente.name" ></ion-input>
+      <ion-input class="dado" placeholder="Idade" [(ngModel)]="paciente.birthdate"></ion-input>
+      <ion-input class="dado" placeholder="Altura" [(ngModel)]="paciente.height"></ion-input>
+      <ion-input class="dado" placeholder="Telefone" [(ngModel)]="paciente.phone"></ion-input>
       <div class="botao">
-      <button class="botaocad">Cancelar</button>
-      <button class="botaocad">Confirmar</button>
+      <button class="botaocad" (click)="back()" >Cancelar</button>
+      <button class="botaocad" (click)="savePaciente()" [routerLink]="['/tabs/list-paciente']" >Confirmar</button>
     </div>
       </div>
 

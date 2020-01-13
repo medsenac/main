@@ -38,6 +38,10 @@ const routes: Routes = [
     loadChildren: () => import('./editsujeito/editsujeito.module').then( m => m.EditsujeitoPageModule)
   },
   {
+    path: 'editsujeito/:id',
+    loadChildren: () => import('./editsujeito/editsujeito.module').then( m => m.EditsujeitoPageModule)
+  },
+  {
     path: 'editadm',
     loadChildren: () => import('./editadm/editadm.module').then( m => m.EditadmPageModule)
   },

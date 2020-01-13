@@ -9,7 +9,7 @@
 
 <ion-content>
   
-<ion-input class="pesquisar" placeholder="Pesquisar sujeito"></ion-input>
+<ion-input class="pesquisar" placeholder="Pesquisar sujeito" ></ion-input>
 
 <div>
   <p class="subt">Sujeitos Cadastrados</p>
@@ -18,7 +18,7 @@
 
   <!-- Card para ser usado no ngfor dos sujeitos-->
   <ion-item-sliding *ngFor="let paciente of pacientes">
-    <ion-item [routerLink]="['/pacientedetalhe',paciente.id]">
+    <ion-item button [routerLink]="['/pacientedetalhe',paciente.id]">
   <ion-card class="corpocardsujeito"  >
   
 
@@ -41,6 +41,10 @@
   <ion-item-option color="danger" (click)="deletePaciente(paciente.id)">
       <ion-icon slot="top" name="trash"></ion-icon>
       Excluir
+  </ion-item-option>
+  <ion-item-option color="primary" [routerLink]="['/editsujeito', paciente.id]">
+    <ion-icon slot="top" name="build"></ion-icon>
+    Editar
   </ion-item-option>
 </ion-item-options>
 </ion-item-sliding>

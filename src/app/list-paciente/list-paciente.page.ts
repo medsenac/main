@@ -1,6 +1,7 @@
+import { AngularFirestore } from '@angular/fire/firestore';
 import { Component, OnInit } from '@angular/core';
 import { Paciente } from 'src/app/interfaces/paciente';
-import { Subscription } from 'rxjs';
+import { Subscription, Subject } from 'rxjs';
 import { PacienteService } from 'src/app/services/paciente.service';
 import { ToastController } from '@ionic/angular';
 
@@ -11,11 +12,18 @@ import { ToastController } from '@ionic/angular';
 })
 export class ListPacientePage implements OnInit {
 
+   paciente: Paciente = {};
+
   
+
+  public loadedGoaList: any[];
   public pacientes = new Array<Paciente>();
   private pacienteSubscription : Subscription;
+ 
+  
 
   constructor(
+              private angularFireStore:AngularFirestore,
                private pacienteService: PacienteService,
                private toastCtrl: ToastController
     ) {
@@ -25,11 +33,18 @@ export class ListPacientePage implements OnInit {
     .subscribe(data =>{
       this.pacientes = data;
     });
+
+    
   }
 
   ngOnInit(){
-    
+ 
   }
+  
+
+ 
+
+  
 
 ngOnDestroy() {
   // destroi o ouvinte quando muda a pagina
@@ -48,6 +63,8 @@ async presentToast(message: string){
   const toast = await this.toastCtrl.create({message, duration:2000 });
   toast.present();
 }
+
+
 
 
 }

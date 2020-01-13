@@ -31,7 +31,7 @@
       <!-- Card para ser usado no ngfor dos sujeitos-->
       <ion-card  class="corpocardsujeito" *ngFor="let paciente of pacientes">
         <div class="fotoscard">
-        <img src="assets/img/teste.jpg"/>
+        <img [src]="paciente.picture"/>
         </div>
         <ion-card-content >          
           <div class="alinhamentotexto">         

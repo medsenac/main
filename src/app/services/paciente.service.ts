@@ -34,7 +34,7 @@ export class PacienteService {
      }
     return this.pacienteCollection.add(paciente);
   }
-   getPaciente(id: string){
+   getPaciente(id: string,){
      return this.pacienteCollection.doc<Paciente>(id).valueChanges();
    }
 

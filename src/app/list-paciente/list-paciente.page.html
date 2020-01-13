@@ -1,6 +1,7 @@
 <ion-header class="tbar">
   <ion-toolbar>
     <ion-title class="ttitle">
+     
       PESQUISA
     </ion-title>
   </ion-toolbar>
@@ -14,11 +15,15 @@
   <p class="subt">Sujeitos Cadastrados</p>
 </div>
 
-<div>
+
   <!-- Card para ser usado no ngfor dos sujeitos-->
-  <ion-card class="corpocardsujeito" *ngFor="let paciente of pacientes" >
+  <ion-item-sliding *ngFor="let paciente of pacientes">
+    <ion-item [routerLink]="['/pacientedetalhe',paciente.id]">
+  <ion-card class="corpocardsujeito"  >
+  
+
     <div class="fotoscard">
-    <img src="assets/img/teste.jpg"/>
+    <img [src]="paciente.picture"/>
     </div>
     <ion-card-content >          
       <div class="alinhamentotexto">         
@@ -29,8 +34,16 @@
 
       </div>      
     </ion-card-content >
-  </ion-card>
-</div>
-  
  
+  </ion-card>
+</ion-item>
+<ion-item-options side="end">
+  <ion-item-option color="danger" (click)="deletePaciente(paciente.id)">
+      <ion-icon slot="top" name="trash"></ion-icon>
+      Excluir
+  </ion-item-option>
+</ion-item-options>
+</ion-item-sliding>
+
+  
 </ion-content>

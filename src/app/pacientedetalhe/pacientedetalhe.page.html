@@ -2,7 +2,8 @@
 <!-- adicionar a tab-->
 <ion-header class="tbar">
   <ion-toolbar>
-    <ion-title class="ttitle">MEDSENAC</ion-title>
+    <ion-title class="ttitle"><button style="background-color: transparent;"   [routerLink]="['/tabs/list-paciente']"> <ion-icon name="arrow-back" style="font-size: 20px;"></ion-icon></button>MEDSENAC</ion-title>
+    
   </ion-toolbar>
 </ion-header>
 
@@ -15,13 +16,13 @@
       <div class="principal">
         <!-- Esta justificado center, testei tbm com justificade flex start. vê qual fica melhor-->
         <div class="fotoalign">
-          <img  src="/assets/img/usuario.svg"/>
+          <img  [src]="paciente.picture"/>
         </div>
         <div class="texto">
-          <p class="cardtexto"> Nome: Teste Tetando Teste</p>
-          <p class="cardtexto"> Idade: 10 </p>
-          <p class="cardtexto"> Altura: 1,50</p>
-          <p class="cardtexto"> Telefone: 21 99999-9999</p>
+        <p class="cardtexto"> Nome: {{paciente.name}}</p>
+          <p class="cardtexto"> Idade: {{paciente.name}} </p>
+          <p class="cardtexto"> Altura: {{paciente.height}}</p>
+          <p class="cardtexto"> Telefone: {{paciente.phone}}</p>
         </div>
       </div>    
       <div class="funcoes">

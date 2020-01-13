@@ -54,6 +54,10 @@ const routes: Routes = [
     loadChildren: () => import('./pacientedetalhe/pacientedetalhe.module').then( m => m.PacientedetalhePageModule)
   },
   {
+    path: 'pacientedetalhe/:id',
+    loadChildren: () => import('./pacientedetalhe/pacientedetalhe.module').then( m => m.PacientedetalhePageModule)
+  },
+  {
     path: 'funcimc',
     loadChildren: () => import('./funcimc/funcimc.module').then( m => m.FuncimcPageModule)
   },

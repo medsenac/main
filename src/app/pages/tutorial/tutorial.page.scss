@@ -1,0 +1,67 @@
+
+ion-content{
+    font-family: Calibri;
+}
+
+ion-slide {
+    height: 100vh;
+    flex-direction: column;
+}
+
+ion-img {
+    max-width: 50vw;
+    max-height: 50vh;
+    overflow: hidden;
+}
+
+
+.slide1 {
+    background: darkslategrey;
+    color: var(--ion-color-primary-contrast);
+}
+
+.slide2 {
+    background: var(--ion-color-success);
+    color: var(--ion-color-success-contrast);
+}
+
+.slide3 {
+    background: var(--ion-color-dark);
+    color: var(--ion-color-dark-contrast);
+}
+.slide4 {
+    background: var(--ion-color-dark);
+    color: var(--ion-color-dark-contrast);
+}
+.slide5 {
+    background: var(--ion-color-dark);
+    color: var(--ion-color-dark-contrast);
+}
+.slide6 {
+    background: var(--ion-color-dark);
+    color: var(--ion-color-dark-contrast);
+}
+.slide7 {
+    background: var(--ion-color-dark);
+    color: var(--ion-color-dark-contrast);
+}
+.slide8 {
+    background: var(--ion-color-dark);
+    color: var(--ion-color-dark-contrast);
+}
+.slide9 {
+    background: var(--ion-color-dark);
+    color: var(--ion-color-dark-contrast);
+}
+.slide10 {
+    background: var(--ion-color-dark);
+    color: var(--ion-color-dark-contrast);
+}
+.slide11 {
+    background: var(--ion-color-dark);
+    color: var(--ion-color-dark-contrast);
+}
+.slide12 {
+    background: darkslategrey;
+    color: var(--ion-color-dark-contrast);
+}

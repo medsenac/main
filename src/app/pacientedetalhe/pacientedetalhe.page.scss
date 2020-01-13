@@ -1,0 +1,126 @@
+
+.tbar{
+    --ion-background-color:#2AC35E;
+  }
+  
+  .ttitle{
+    font-family: Calibri;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: #FFFFFF;
+  }
+  
+ 
+.cad{
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    background: rgba(42, 195, 94, 0.4);
+    border-radius: 25px;
+    margin-top: 40px;
+    margin-right: 6%;
+    margin-left: 6%;
+  }
+
+  .lapis{   
+    width: 105%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .lapis img{
+    width: 25px;
+    height: 25px;
+  }
+
+  .principal{
+      display: flex;         
+      align-content: center;
+      align-items: center;
+      justify-content: center;      
+      width: 100%;
+      margin-top: 20px;
+  }
+    .fotoalign{
+        margin-right: 5px; 
+               
+    }
+    .fotoalign img{
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+}
+    .texto{
+       margin-left: 5px;
+    }
+
+  .cardtexto{
+    font-family: Calibri;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+   
+  }
+
+  .funcoes{
+    width: 100%;   
+    margin-top: 40px;
+    display: flex;   
+    align-items: center;
+    justify-content: space-between;   
+    margin-bottom: 20px; 
+}
+
+    .func{
+        height: 8vh;
+        margin-left: -13px;
+        margin-right: -13px;
+        margin-bottom: 20px;
+    }
+
+    .func img{
+        width: 65px;
+        height: 65px;
+    }
+    .func p{
+        text-align: center;
+        font-size: 18px;
+        margin-top: 4px;
+        font-family: calibri;
+        font-weight: bold;
+        color: white;
+    }
+
+    
+    .botoes{
+        display: flex;   
+        flex-direction: column;      
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+    .botoes button{
+        background: transparent;
+    }
+
+    .botaoum{
+       margin-bottom: 10px;
+        
+    }
+    .botaoum img{
+        width: 200px;
+        height: 50px;
+        border-radius: 20px;  
+    }
+
+    .botaodois{
+        margin-top: 10px;
+    }
+    .botaodois img{
+        width: 182px;
+        height: 50px;
+        border-radius: 20px;
+    }

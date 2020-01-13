@@ -1,0 +1,48 @@
+<ion-header class="tbar">
+  <ion-toolbar>
+    <ion-title class="ttitle">
+      MEDSENAC
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div>
+      <ion-card class="corpocard">
+        <div class="fotoscard">
+        <img src="assets/img/teste.jpg" />
+        </div>
+        <ion-card-content>
+          <!-- Clase do texto na pegou na div, joguei direto no p mas acho q e errado :D-->
+          <div>
+          <!-- Back, jogar variaveis do cadatro do usuario no Bd aqui--> 
+            <p class="cardtexto"> Usuário:</p>
+            <p class="cardtexto"> Turno:</p>
+            <p class="cardtexto"> Tipo:</p>
+            <p class="cardtexto"> Turma:</p>
+          </div>        
+        </ion-card-content>
+      </ion-card>
+    </div>
+    <div>
+      <p class="subt">Últimos Sujeitos</p>
+    </div>
+    <div>
+      <!-- Card para ser usado no ngfor dos sujeitos-->
+      <ion-card (click)="deletePaciente(paciente.id)" class="corpocardsujeito" *ngFor="let paciente of pacientes">
+        <div class="fotoscard">
+        <img src="assets/img/teste.jpg"/>
+        </div>
+        <ion-card-content >          
+          <div class="alinhamentotexto">         
+            <p class="cardtextosujeito"> Nome: {{paciente.name}} </p>
+            <p class="cardtextosujeito"> Idade:{{paciente.birthdate}}</p>
+            <p class="cardtextosujeito"> Altura: {{paciente.height}}</p>
+            <p class="cardtextosujeito"> Telefone: {{paciente.phone}} </p>
+          </div> 
+               
+        </ion-card-content>
+        
+      </ion-card>
+    </div>
+</ion-content>

@@ -1,0 +1,33 @@
+<ion-header class="tbar">
+  <ion-toolbar>
+    <ion-title class="ttitle">
+      CADASTRO DE SUJEITOS
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-card class="cad">
+    <ion-card-content>
+      
+      <h1>Cadastrar Sujeito</h1>
+      <div class="imgsuj">
+      <img src="assets/img/usuario.svg" alt="sujeito" width="60%">
+      </div>
+
+      <!--formulário para cadastro de cliente-->
+      <div class="form">
+      <ion-input class="dado" [(ngModel)]="paciente.name" placeholder="Nome completo"></ion-input>
+      <ion-input class="dado" [(ngModel)]="paciente.birthdate" placeholder="Idade"></ion-input>
+      <ion-input class="dado" [(ngModel)]="paciente.height" placeholder="Atura"></ion-input>
+      <ion-input class="dado" [(ngModel)]="paciente.phone" placeholder="Telefone"></ion-input>
+      <button class="botaocad" (click)="savePaciente()" routerLink="/tabs/home" >Cadastrar</button>
+      </div>
+
+
+    </ion-card-content>
+  </ion-card>
+  
+ 
+</ion-content>

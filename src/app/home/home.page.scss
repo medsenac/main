@@ -1,0 +1,84 @@
+
+.tbar{
+  --ion-background-color:#2AC35E;
+}
+
+.ttitle{
+  font-family: Calibri;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+
+.fotoscard{ 
+    height: 12vh;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.fotoscard img{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+}
+
+.corpocard{
+  display: flex;
+  flex-direction: row;  
+  margin: 0;  
+  height: 100px;
+  width: 100%;
+  background-color: rgba(42, 195, 94, 0.6);
+}
+
+.cardtexto{
+  font-family: Calibri;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;  
+  color: black;
+ 
+}
+
+.subt{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: Calibri;
+  font-style: normal;
+  font-weight: normal;                
+  font-size: 25px;
+  color: grey;
+  border-top: solid 2px grey;
+  border-bottom: solid 2px grey;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.corpocardsujeito{
+  display: flex;
+  flex-direction: row;    
+  margin: 0;  
+  height: 100px;
+  width: 98%;
+  background-color: rgba(42, 195, 94, 0.3);
+  border-radius: 20px;
+  margin-left: 1%;
+}
+
+.alinhamentotexto{
+  float: left;
+  }
+
+.cardtextosujeito{
+  font-family: Calibri;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;  
+  color: black; 
+}
+
+
+
+

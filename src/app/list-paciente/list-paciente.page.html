@@ -1,0 +1,36 @@
+<ion-header class="tbar">
+  <ion-toolbar>
+    <ion-title class="ttitle">
+      PESQUISA
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+<ion-input class="pesquisar" placeholder="Pesquisar sujeito"></ion-input>
+
+<div>
+  <p class="subt">Sujeitos Cadastrados</p>
+</div>
+
+<div>
+  <!-- Card para ser usado no ngfor dos sujeitos-->
+  <ion-card class="corpocardsujeito" *ngFor="let paciente of pacientes" >
+    <div class="fotoscard">
+    <img src="assets/img/teste.jpg"/>
+    </div>
+    <ion-card-content >          
+      <div class="alinhamentotexto">         
+        <p class="cardtextosujeito"> Nome: {{paciente.name}} </p>
+        <p class="cardtextosujeito"> Idade:{{paciente.birthdate}}</p>
+        <p class="cardtextosujeito"> Altura: {{paciente.height}}</p>
+        <p class="cardtextosujeito"> Telefone: {{paciente.phone}} </p>
+
+      </div>      
+    </ion-card-content >
+  </ion-card>
+</div>
+  
+ 
+</ion-content>

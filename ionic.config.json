@@ -1,0 +1,7 @@
+{
+  "name": "pacientes",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

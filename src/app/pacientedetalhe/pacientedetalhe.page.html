@@ -1,0 +1,52 @@
+<!--página detalhada do paciente, deve ser linkada aos cards dos paciente com routing onClick-->
+<!-- adicionar a tab-->
+<ion-header class="tbar">
+  <ion-toolbar>
+    <ion-title class="ttitle">MEDSENAC</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="cad">
+    <ion-card-content>
+      <div class="lapis"> <!--Não consegui alinhar-->
+        <img src="/assets/icon/editar.svg"/>
+      </div>
+      <div class="principal">
+        <!-- Esta justificado center, testei tbm com justificade flex start. vê qual fica melhor-->
+        <div class="fotoalign">
+          <img  src="/assets/img/usuario.svg"/>
+        </div>
+        <div class="texto">
+          <p class="cardtexto"> Nome: Teste Tetando Teste</p>
+          <p class="cardtexto"> Idade: 10 </p>
+          <p class="cardtexto"> Altura: 1,50</p>
+          <p class="cardtexto"> Telefone: 21 99999-9999</p>
+        </div>
+      </div>    
+      <div class="funcoes">
+        <!-- Testei tds os align e justify posiveis e não consegui alinhar, os icones so saem do lugar com margem ( que da merda no fim ¬¬)-->
+        <div class="func">
+          <img src="/assets/icon/imc.svg" />
+          <p>IMC</p>
+        </div>
+        <div class="func">
+          <img src="/assets/icon/glicose.svg" />
+          <P>GLICOSE</P>
+        </div>
+        <div class="func">
+          <img src="/assets/icon/pam.svg" />
+          <P>PAM</P>
+        </div>
+      </div>
+      <div class="botoes">
+        <div class="botaoum">
+          <button><img src="/assets/icon/comparativo.svg" /></button>
+        </div>
+        <div class="botaodois">
+          <button><img src="assets/icon/historico.svg"/></button>
+        </div>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
